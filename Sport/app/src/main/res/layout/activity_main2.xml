@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <ImageView
+        android:id="@+id/imgbaner"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:src="@drawable/img_baseball" />
+
+    <TextView
+        android:id="@+id/tvjudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="8dp"
+        android:text="Benar"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_below="@id/imgbaner"
+        android:id="@+id/view"
+        android:orientation="vertical"
+        android:layout_alignParentBottom = "true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_below="@id/tvjudul"
+            android:id="@+id/tvdesk1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Benar"
+            android:textSize="16sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_below="@id/tvdesk1"
+                    android:id="@+id/tvdesk2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Benar"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

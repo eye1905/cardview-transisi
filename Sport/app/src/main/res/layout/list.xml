@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="239dp">
+
+        <ImageView
+            android:id="@+id/imgbaner"
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:src="@drawable/img_baseball" />
+
+
+        <TextView
+            android:id="@+id/tvjudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="8dp"
+            android:text="Benar"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:layout_marginTop="70dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@id/tvjudul"
+            android:id="@+id/tvdesk1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="8dp"
+            android:text="Benar"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_below="@id/tvdesk1"
+            android:id="@+id/tvdesk2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Benar"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
